@@ -9,7 +9,7 @@ import (
 	"net/http"
 )
 
-const apiKey = "sk-proj-UchxBLJyVrfedWH7JJFlT3BlbkFJ2yasZndADMp5uxSS3ji0"
+const apiKey = ""
 const apiEndpoint = "https://api.openai.com/v1/chat/completions"
 
 var tmpl = template.Must(template.ParseFiles("ui/templates/index.html"))
