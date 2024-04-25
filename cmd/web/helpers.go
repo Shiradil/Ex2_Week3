@@ -12,7 +12,7 @@ type application struct {
 }
 
 func NewApplication() *application {
-	file, err := os.OpenFile("history.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("internal/logs/history.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal("Cannot open history log file:", err)
 	}
